@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Ride Share Service</title>
+	<link rel="stylesheet" type="text/css" href="css/rideshare.css">
+  </head>
+  <body>
+	<script src="https://maps.googleapis.com/maps/api/js?sensor=false&libraries=places,geometry"></script>
+	<script src="http://google-maps-utility-library-v3.googlecode.com/svn/trunk/routeboxer/src/RouteBoxer.js"></script>
+	<script src="http://www.geocodezip.com/scripts/javascript.util.js"></script>
+	<script src="http://www.geocodezip.com/scripts/jsts.js"></script>
+    <script src="js/ridesharelookup.js"></script>
+	<table>
+		<col width="150">
+		<col width="1000">
+		<tr>
+			<td>Source location</td>
+			<td><input type="text" id="source"></td>
+		</tr>
+		<tr>
+			<td>Destination location</td>
+			<td><input type="text" id="destination"></td>
+		</tr>
+	</table>
+	<table>
+		<col width="150">
+		<col width="1000">
+		<tr>
+			<td>Requester Location</td>
+			<td><input type="text" id="customerSource"></td>
+			</tr>
+			<tr>
+			<td>
+			<input type="button" id="search" value="Look Up" />
+			</td>
+			<td>
+			
+			<div id="resultDiv">No Result</div>
+			</td>
+		</tr>
+	</table>
+	<div id="map" class="map-center"></div>
+  </body>
+</html>

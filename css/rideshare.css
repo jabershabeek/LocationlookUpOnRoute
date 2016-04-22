@@ -1,0 +1,37 @@
+		html, body {
+		  height: 100%;
+		  margin: 0;
+		}
+		table{
+		padding :20px;
+		}
+		#map {
+		  height: 70%;
+		  width: 100%;
+		}
+		
+		.map-center {
+			border: solid 1px black;
+			position: absolute;
+			background-color: white;
+			height: 400px;
+		}
+
+		#source {
+		  width: 50%;
+		  height: 25px;
+		}
+
+		#destination {
+		  width: 50%;
+		  height: 25px;
+		}
+		
+		#customerSource {
+		  width: 50%;
+		  height: 25px;
+		}
+		#resultDiv{
+		    font-size: 20px;
+    color: green;
+		}
